@@ -17,6 +17,16 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+//My Solution 
+function steps(n) {
+    for (let i=1; i<=n; i++) {
+        console.log("".padEnd(i,"#") + "".padEnd(n-i, " "));
+    }
+}
+
+
+
+
+
 
 module.exports = steps;
