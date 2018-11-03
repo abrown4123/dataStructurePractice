@@ -14,6 +14,15 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+//My solution
+function pyramid(n) {
+    let space = Math.floor(((n*2)-1)/2);
+	let blocks = 1;
+    for (let i=0; i<n; i++) {
+        console.log( `${"".padEnd(space, " ")}${"".padEnd(blocks,"#")}${"".padEnd(space, " ")}`);
+        blocks += 2;
+        space--;
+    }
+}
 
 module.exports = pyramid;
