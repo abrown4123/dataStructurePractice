@@ -79,6 +79,7 @@ class LinkedList {
         return head;
     }
 
+    forEach()
 
 }
 
